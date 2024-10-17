@@ -192,6 +192,7 @@ p{
     bottom: 5vh; 
     right: 10px;
     z-index: 2;
+    overflow: hidden;
 }
 
 #musicControl:hover {
