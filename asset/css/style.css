@@ -234,7 +234,9 @@ p{
     background: #D3B892 ;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-bottom: 30px;
+    overflow: hidden;
 }
 
 .profil h2{
@@ -275,6 +277,7 @@ p{
     padding: 50px 20px;
     background: #C1A17F;
     color: #333;
+    align-items: center;
     text-align: center;
     overflow: hidden;
 }
@@ -536,6 +539,10 @@ th[colspan] {
 
 /* rsvp */
 .formulir {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
     background:#C1A17F;
     padding: 30px 0;
 }
@@ -547,7 +554,6 @@ th[colspan] {
     width: 100%;
     max-width: 600px;
     box-sizing: border-box;
-    margin-left: 60vh;
 }
 
 form {
