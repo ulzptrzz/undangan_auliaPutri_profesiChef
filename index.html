@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wedding Invitation</title>
+    <link rel="stylesheet" href="./asset/css/style.css" />
+    <script src="https://unpkg.com/akar-icons-fonts"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  </head>
+  <body>
+    <!-- Halaman Awal -->
+    <header class="cover">
+      <!--Isi halaman awal-->
+      <section class="text">
+        <img data-aos="zoom-in-up" data-aos-duration="1000" src="./asset/img/logo2.png" alt="logo">
+        <h1 data-aos="fade-down" data-aos-duration="2000">The Wedding of</h1>
+        <h2 data-aos="fade-up" data-aos-duration="2000">Belva & Citra</h2>
+        <p data-aos="fade-down" data-aos-duration="2000">
+          Kami mengundang saudara-saudari untuk turut serta dalam acara
+        </p>
+        <h2 data-aos="fade-down" data-aos-duration="2000">Hawa & Keluarga</h2>
+        <!--Button ke halaman berikutnya-->
+        <button class="btn" onclick="openInvite()" data-aos="fade-down" data-aos-duration="2000">
+          <section class="open">
+            <i class='bx bx-envelope-open'></i>
+            <p>Open Invitation</p>
+          </section>
+        </button>
+      </section>
+      <!--elemen cover pertama-->
+      <img class="elemen-koki" data-aos="fade-up" data-aos-duration="2000" src="./asset/img/elemen13.png" />
+    </header>
+    <!-- Akhir Halaman Awal -->
+
+    <!-- Halaman Kedua -->
+    <main id="home" class="coverKedua">
+      <!--isi pertama halaman kedua-->
+      <section class="isiCover">
+        <div class="text2"  data-aos="zoom-in" >
+          <h1>The Wedding of</h1>
+          <h2 data-aos="fade-down">Belva & Citra <img class="icon" src="./asset/img/mortar-pestle-solid (1).svg" alt="icon" /></h2>
+          <p>
+            Sekalipun orang memberikan seluruh harta benda rumahnya demi cinta, cinta itu akan ditolak.
+          </p>
+          <p>
+            cinta itu akan ditolak. Cinta terbaik adalah cinta yang membangkitkan jiwa
+          </p>
+          <p>
+             dan membuat kita meraih lebih. 
+          </p>
+          
+        </div>
+        <!--foto cover kedua-->
+        <div class="fotoCover">
+          <img class="elemen" src="./asset/img/elemen7.png" alt="elemen" />
+        </div>
+      </section>
+      <!--navigasi halaman-->
+      <section class="navigasi">
+        <section id="nav" >
+          <ul class="isi-navigasi">
+            <a href="#Profile">
+              <li><img class="icon" src="./asset/img/male-female-regular-24.png" alt="icon" /></li
+            ></a>
+            <a href="#acara"
+              ><li><img class="icon" src="./asset/img/calendar-heart-regular-24.png" alt="icon" /></li
+            ></a>
+            <a href="#gallery"
+              ><li><img class="icon" src="./asset/img/file-image-solid-24 (1).png" alt="icon" /></li
+            ></a>
+            <a href="#rsvp"
+              ><li><img class="icon" src="./asset/img/book-bookmark-regular-24.png" alt="icon" /></li
+            ></a>
+            <a href="#gift"
+              ><li><img class="icon" src="./asset/img/gift-regular-white-24.png" alt="icon" /></li
+            ></a>
+            <a href="#mymessage"
+              ><li><img class="icon" src="./asset/img/message-alt-edit-regular-24.png" alt="icon" /></li
+            ></a>
+          </ul>
+        </section>
+        <section id="musicControl" onclick="openInvite()">
+          <img id="imgmusik" src="./asset/img/musik.png" alt="matiin musik">
+        </section>
+      </section>
+      <!--lagu dan qoutes-->
+      <section id="quotes" class="qoutes">
+        <audio id="weddingMusic" loop>
+          <source src="./asset/audio/Beatiful_in_white.mp3" type="audio/MP3" />
+        </audio>
+        <article data-aos="fade-up" data-aos-duration="2000">
+          <img data-aos="zoom-in-up" data-aos-duration="1000" src="./asset/img/logo3.png" alt="">
+          <h3>QS. Ar-Rum Ayat 21</h3>
+          <p>
+            وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا
+            لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ
+          </p>
+          <p>
+            مَّوَدَّةً وَّرَحْمَةًۗ اِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ
+            يَّتَفَكَّرُوْنَ
+          </p>
+          <p>
+            "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan
+            pasangan-pasangan untukmu dari jenismu sendiri, 
+          </p>
+          <p>
+            agar kamu cenderung dan merasa tenteram kepadanya, dan Dia
+            menjadikan di antaramu rasa kasih dan sayang."
+          </p>
+          <img data-aos="zoom-in-up" data-aos-duration="1000" src="./asset/img/logo3.png" alt="">
+        </article>
+      </section>
+      <!--Profil mempelai-->
+      <section id="Profile" class="profil">
+        <!--Profil pria-->
+        <div class="pria">
+          <div class="pria-image">
+            <img data-aos="zoom-in-up" data-aos-duration="1000" src="./asset/img/pria.jpeg" alt="pria" />
+          </div>
+          <h2 data-aos="fade-down" data-aos-duration="1000">Belva Hamdan Nadir</h2>
+          <p data-aos="fade-up" data-aos-duration="1000">Putra pertama dari Ibu Susi Susmianti</p>
+          <p data-aos="fade-up" data-aos-duration="1000"> & Bapak Suwito Shanenises</p>
+          <i class="fab fa-instagram"></i><a href="https://www.instagram.com/">Belvanadir</a>
+        </div>
+        <img class="asset-dan" src="./asset/img/Dan.png" alt="dan" />
+        <!--Profil wanita-->
+        <div class="wanita">
+          <img data-aos="zoom-in-up" data-aos-duration="1000" src="./asset/img/wanita.jpeg" alt="wanita" />
+          <h2 data-aos="fade-down" data-aos-duration="1000">Citrananda Dahayu Olympia</h2>
+          <p data-aos="fade-up" data-aos-duration="1000">Putri terakhir dari Ibu Sutami Ayu</p>
+          <p data-aos="fade-up" data-aos-duration="1000"> & Bapak Hadnan Suwartono</p>
+          <i class="fab fa-instagram"></i><a href="https://www.instagram.com/">Citraolym</a>
+        </div>
+      </section>
+      <!--Detail dari acara-->
+      <section id="acara" class="detail-acara">
+        <h2><img class="icon-2" src="./asset/img/restaurant-regular-24.png" alt="icon" />Detail Acara <img class="icon-2" src="./asset/img/restaurant-regular-24.png" alt="icon" /></h2>
+        <section class="info-acara">
+          <!--acara akad-->
+          <section class="isi-acara" data-aos="fade-up" data-aos-duration="2000">
+            <h3 data-aos="fade-down" data-aos-duration="1000"><img class="icon" src="./asset/img/sushi-solid-24.png" alt="icon" /> Akad nikah <img class="icon" src="./asset/img/sushi-solid-24.png" alt="icon" /></h3>
+            <p data-aos="fade-up" data-aos-duration="1000">Tanggal: Juni 5, 2029</p>
+            <p data-aos="fade-up" data-aos-duration="1000">Waktu: 10:00 AM - 12:00 PM</p>
+            <p data-aos="fade-up" data-aos-duration="1000">Lokasi: Summarecon Mall Bekasi, Bekasi</p>
+            <button id="save-date-btn" class="date">Save the date</button>
+          </section>
+          <!--acara resepsi-->
+          <section class="isi-acara"  data-aos="fade-up" data-aos-duration="2000">
+            <h3 data-aos="fade-down" data-aos-duration="1000"><img class="icon" src="./asset/img/sushi-solid-24.png" alt="icon" /> Resepsi <img class="icon" src="./asset/img/sushi-solid-24.png" alt="icon" /></h3>
+            <p data-aos="fade-up" data-aos-duration="1000">Tanggal: Juni 5, 2029</p>
+            <p data-aos="fade-up" data-aos-duration="1000">Waktu: 1:00 pm - 7:00 PM</p>
+            <p data-aos="fade-up" data-aos-duration="1000">Lokasi: Summarecon Mall Bekasi, Bekasi</p>
+            <button id="save-date-btn" class="date">Save the date</button>
+          </section>
+        </section>
+        <!--Waktu Hitung Mundur Acara-->
+        <section class="hitung-mundur" data-aos="fade-up" data-aos-duration="2000">
+          <section id="hitung">
+            <section class="waktu" data-aos="fade-right" data-aos-duration="2000">
+              <section class="number" id="days">00</section>
+              <section class="label">Hari</section>
+            </section>
+            <section class="waktu" data-aos="fade-up" data-aos-duration="2000">
+              <section class="number" id="hours">00</section>
+              <section class="label">Jam</section>
+            </section>
+            <section class="waktu" data-aos="fade-left" data-aos-duration="2000">
+              <section class="number" id="minutes">00</section>
+              <section class="label">Menit</section>
+            </section>
+            <section class="waktu" data-aos="fade-up" data-aos-duration="2000">
+              <section class="number" id="seconds">00</section>
+              <section class="label">Detik</section>
+            </section>
+          </section>
+        </section>
+        <!--Goggle maps-->
+        <iframe class="invitation"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7932.581690408644!2d107.001826!3d-6.22533!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698c71cf814d97%3A0xd22a5d56809f070a!2sSummarecon%20Mall%20Bekasi!5e0!3m2!1sen!2sid!4v1724550672043!5m2!1sen!2sid"
+          width="700" height="340" style="border: 0" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" data-aos="flip-right" data-aos-duration="2000"></iframe>
+      </section>
+       <!-- Story Section -->
+      <section class="story">
+        <h2 data-aos="fade-right" data-aos-duration="1000"> Our Loves Story <i class='bx bxs-dish'></i></h2>
+        <section class="section-story">
+          <section class="scroll-story" data-aos="fade-up" data-aos-duration="1500">
+            <section class="isi-story" data-aos="fade-down" data-aos-duration="1500">
+                <div class="gambar-story">
+                    <img src="./asset/img/Couple5.jpeg" alt="We met in 2019">
+                </div>
+                <div class="text-story">
+                    <h3>2024</h3>
+                    <p>Kita Bertemu</p>
+                </div>
+            </section>
+            <section class="isi-story" data-aos="fade-up" data-aos-duration="1500">
+                <div class="gambar-story">
+                    <img src="./asset/img/Couple2.jpeg" alt="We met in 2019">
+                </div>
+                <div class="text-story">
+                    <h3>2025</h3>
+                    <p>Kencan Pertama</p>
+                </div>
+            </section>
+            <section class="isi-story" data-aos="fade-up" data-aos-duration="1500">
+                <div class="gambar-story">
+                    <img src="./asset/img/Couple20.jpeg" alt="We met in 2019">
+                </div>
+                <div class="text-story">
+                    <h3>2027</h3>
+                    <p>Kami bertunangan</p>
+                </div>
+            </section>
+            <section class="isi-story" data-aos="fade-down" data-aos-duration="1500">
+                <div class="gambar-story">
+                    <img src="./asset/img/Couple15.jpeg" alt="We met in 2019">
+                </div>
+                <div class="text-story">
+                    <h3>2028</h3>
+                    <p>Lamaran</p>
+                </div>
+            </section>
+            <section class="isi-story" data-aos="fade-up" data-aos-duration="1500">
+                <div class="gambar-story">
+                    <img src="./asset/img/Couple22.jpeg" alt="We met in 2019">
+                </div>
+                <div class="text-story">
+                    <h3>2029</h3>
+                    <p>Menuju kepernikahan</p>
+                </div>
+            </section>
+          </section>
+        </section>
+      </section>
+      <section class="story-video" data-aos="zoom-in-up" data-aos-duration="2000">
+        <iframe width="700" height="340" src="https://www.youtube.com/embed/_ZtzymOox8E?si=Bz-QV66h1Ek-mrGy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </section>
+      <!--Gallery photos-->
+      <section id="gallery" class="gallery-container">
+        <h2 data-aos="fade-up" data-aos-duration="1000"><img class="icon" src="./asset/img/utensils-solid (1).svg" alt="icon" /> Gallery Photos & Videos <img class="icon" src="./asset/img/utensils-solid (1).svg" alt="icon" /></h2>
+        <section class="gallery">
+          <img data-aos="fade-up" data-aos-duration="2000" src="./asset/img/Couple1.jpeg" alt="foto1" />
+          <img data-aos="fade-down" data-aos-duration="2000" src="./asset/img/Couple3.jpeg" alt="foto2" />
+          <img data-aos="fade-up" data-aos-duration="2000" src="./asset/img/Couple6.jpeg" alt="foto3" />
+          <img data-aos="fade-down" data-aos-duration="2000" src="./asset/img/Couple7.jpeg" alt="foto4" />
+          <img data-aos="fade-up" data-aos-duration="2000" src="./asset/img/Couple9.jpeg" alt="foto5" />
+          <img data-aos="fade-down" data-aos-duration="2000" src="./asset/img/Couple10.jpeg" alt="foto6" />
+          <img data-aos="fade-up" data-aos-duration="2000" src="./asset/img/Couple16.jpeg" alt="foto7" />
+          <img data-aos="fade-down" data-aos-duration="2000" src="./asset/img/Couple17.jpeg" alt="foto8" />
+          <img data-aos="fade-up" data-aos-duration="2000" src="./asset/img/Couple18.jpeg" alt="foto9" />
+          <img data-aos="fade-down" data-aos-duration="2000" src="./asset/img/Couple21.jpeg" alt="foto10" />
+        </section>
+        <!--Gallery video-->
+        <section class="gallery-video" data-aos="zoom-in-up" data-aos-duration="2000">
+          <video autoplay loop muted>
+            <source src="./asset/video/Preweddingku.mp4">
+          </video>
+        </section>
+      </section>
+      <!--tamu spesial-->
+      <section class="tamu-khusus">
+        <section class="section-tamu-khusus" data-aos="fade-up" data-aos-duration="2000">
+          <header class="tamu">
+            <h2><img class="icon" src="./asset/img/bowl-hot-regular-24.png" alt="icon" /> Tamu Khusus <img class="icon" src="./asset/img/bowl-hot-regular-24.png" alt="icon" /></h2>
+          </header>
+          <table id="table-tamu">
+            <thead>
+              <tr>
+                <th rowspan="2">Foto</th>
+                <th rowspan="2">Nama</th>
+                <th rowspan="2">Almat</th>
+                <th colspan="2">Detail Kontak</th>
+              </tr>
+              <tr>
+                <th>Email</th>
+                <th>Telepon</th>
+              </tr>
+            </thead>
+            <tbody id="guests-tbody">
+              <tr>
+                <td><img src="./asset/img/koki1.jpg" alt="Foto Chef Arif" class="guest-photo"></td>
+                <td>Chef Arif</td>
+                <td>Le Gourmet</td>
+                <td>arif@legourmet.com</td>
+                <td>+62 812-3456-7890</td>
+              </tr>
+              <tr>
+                <td><img src="./asset/img/koki2.jpg" alt="Foto Chef Dita" class="guest-photo"></td>
+                <td>Chef Dita</td>
+                <td>Bistro Bon Appétit</td>
+                <td>dita@bistro.com</td>
+                <td>+62 813-4567-8901</td>
+              </tr>
+              <tr>
+                <td><img src="./asset/img/koki3.jpeg" alt="Foto Chef Fadil" class="guest-photo"></td>
+                <td>Chef Fadil</td>
+                <td>Il Forno</td>
+                <td>fadil@ilforno.com</td>
+                <td>+62 814-5678-9012</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>      
+      </section>
+      <!--Form rsvp-->
+      <section class="formulir">
+        <section id="rsvp" class="rsvp" data-aos="fade-up" data-aos-duration="2000">
+            <h2>Form Kehadiran <img class="icon" src="./asset/img/coffee-alt-solid-24.png" alt="icon" /></h2>
+            <form id="rsvpForm">
+              <!--Format textbox-->
+              <label for="name">Nama:</label>
+              <input type="text" id="name" name="name" required>
+              <label for="age">Umur:</label>
+              <input type="number" id="age" name="age" required>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+              <!--Format Radio-->
+              <fieldset>
+                <legend>Apakah kamu akan datang?</legend>
+                <label><input type="radio" name="kehadiran" value="yes" required> Iya</label>
+                <label><input type="radio" name="kehadiran" value="no"> Tidak</label>
+              </fieldset>
+              <!--Format Checkbox-->
+              <fieldset>
+                <legend>Pilihan Aktivitas:  </legend>
+                <label><input type="checkbox" value="foto booth" name="activities" id="foto"> Berminat berpartisipasi dalam acara foto booth</label>
+                <label><input type="checkbox" value="games" name="activities" id="game"> Mengikuti games di acara</label>
+                <label><input type="checkbox" value="melempar bunga" name="activities" id="bunga"> Ikut serta dalam kegiatan melempar bunga pengantin</label>
+                <label><input type="checkbox" value="kuis interaktif" name="activities" id="kuis"> Mengikuti kuis interaktif</label>
+                <label><input type="checkbox" value="Hanya menikmati acara" name="activities" id="menikmati"> Hanya ingin menikmati acara tanpa partisipasi</label>
+              </fieldset>
+              <!--Format Selectbox-->
+              <label for="tamu">Jumlah tamu: </label>
+              <select id="tamu" name="guestCount">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="banyak">lebih banyak</option>
+              </select>
+              <!--Format Text area-->
+              <label for="message-form">Pesan: </label>
+              <textarea id="message-form" name="message" rows="4"></textarea>
+              <!--Tommbol submit-->
+              <button type="submit-form">Submit</button>
+            </form>
+          </section>
+      </section>
+        <!-- Pengiriman hadiah-->
+        <section class="gift-section" id="gift" data-aos="fade-up" data-aos-duration="2000">
+          <h2 class="section-title">Kirim Hadiah <img class="icon" src="./asset/img/gift-regular-24.png" alt="icon" /></h2>
+          <div class="transfer">
+            <div class="transfer-option">
+              <h4>Transfer </h4>
+              <p>Kamu bisa transfer ke rekening yang tertera dibawah ini:</p>
+              <div class="bank-details">
+                <img src="./asset/img/atm2.png" alt="ATM" class="gift-img">
+                <ul>
+                  <li><span>No. Rek:</span> 0660580697</li>
+                  <li><span>Atas Nama:</span> Citrananda Dahayu Olympia</li>
+                </ul>
+                <button class="copy-button" onclick="copyToClipboard('0660580697')">Copy No. Rek</button>
+              </div>
+            </div>
+            <div class="transfer-option">
+              <h4>Kirim Kado </h4>
+              <p>Kamu bisa memberikan hadiah ke alamat yang tertera: </p>
+              <div class="bank-details">
+                <img src="./asset/img/hadiah.png" alt="Gift" class="gift-img">
+                <ul>
+                  <li><span>Jalan: </span>jalan kelapa parut 4 no. 210 Rt03/Rw18, Kota Bekasi</li>
+                  <li><span>Rumah: </span>Belva Hamdan Nadir</li>
+                </ul>
+                <button class="copy-button" onclick="copyToClipboard('jalan kelapa parut 4 no. 210 Rt03/Rw18, Kota Bekasi')">Copy Alamat</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Pesan Untuk Pengantin -->
+        <section class="message">
+          <img data-aos="zoom-in-up" data-aos-duration="1000" src="./asset/img/logo3.png" alt="logo">
+          <div class="container-message" id="mymessage" data-aos="fade-up" data-aos-duration="2000">
+            <h2>Pesan untuk Pengantin </h2>
+            <form class="message-form" id="messageForm">
+              <input type="text" class="text-form" id="name" placeholder="Nama lengkap" required>
+              <input type="text" class="text-form" id="location" placeholder="Alamat" required>
+              <textarea class="message-box" id="messageBox" placeholder="contoh: Selamat untuk acaranya"></textarea>
+              <button type="submit" class="submit-button">Kirim Pesan</button>
+            </form>
+            <div class="messages-section"></div>
+          </div>
+          <div class="message-img">
+            <img data-aos="zoom-in-up" data-aos-duration="1000" src="./asset/img/logo3.png" alt="logo">
+          </div>
+        </section>
+        <!-- Pesan terimakasih -->
+        <section class="thank-you">
+          <section class="thank-you-section" data-aos="fade-up" data-aos-duration="2000">
+            <h2><img class="icon" src="./asset/img/dish-regular-24.png" alt="icon" /> Terima Kasih <img class="icon" src="./asset/img/dish-regular-24.png" alt="icon" /></h2>
+            <p>Atas Doa Dan Bapak/Ibu Yang Berkenan Hadir Pada Acara Yang Kami Selenggarakan</p>
+          </section>
+          <!--footer image-->
+          <footer class="footer">
+            <img src="./asset/img/elemen13.png" alt="elemen" />
+          </footer>
+        </section>
+    </main>
+    <!-- Akhir Halaman Kedua -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="./asset/js/script.js"></script>
+  </body>
+</html>

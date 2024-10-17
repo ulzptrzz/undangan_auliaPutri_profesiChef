@@ -1,0 +1,1038 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script:wght@400..700&family=Playfair+Display:wght@400;700&family=Alex+Brush&family=Cinzel:wght@400;700&family=Parisienne&family=Lobster&family=Marck+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dancing Script', cursive;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+/* halaman awal */
+.cover {
+    background-image: linear-gradient(to left, rgba(44, 44, 44, 0.5), rgba(56, 56, 56, 0.5)), url("../asset/../img/nikah.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+    color: #ffffff;
+    transition: opacity 1s ease-in-out; 
+    opacity: 0.9;
+    overflow: hidden;
+}
+
+.cover img {
+    width: 87em;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.text {
+    margin-top: 20vh;
+}
+.text img {
+    width: 100px;
+}
+
+.text2 {
+    padding: 30vh 0 20vh 0;
+}
+/* pengaturan teks */
+h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+p{
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.icon {
+    width: 27px;
+}
+
+.icon-2 {
+    width: 35px;
+}
+/* tombol open invitation */
+.btn {
+    height: 50px;
+    line-height: 23px;
+    background: #5f4a3e;
+    border-radius: 50px;
+    border: none;
+    text-decoration: none;
+    overflow: hidden;
+    margin-top: 20px;
+    align-items: center;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.btn:hover {
+    background-color: #2d2c2cf0;
+    transform: scale(1.05);
+}
+
+.open {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    overflow: hidden;
+}
+
+.open p {
+    font-size: 20px;
+    margin-left: 4px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.open i {
+    font-size: 25px;
+}
+
+/* halaman kedua */
+.coverKedua {
+    background-color: #F3E8D2;
+    display: none;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    transition: opacity 1s ease-in-out;
+}
+/* isi cover */
+.isiCover {
+    height: 100vh;
+    display: flex;
+    padding: 20px;
+    color: #805C3E;
+    overflow: hidden;
+}
+
+/* foto didalam cover kedua */
+.fotoCover {
+    background-image: url("../asset/../img/Couple2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 15vh 0 0 50px;
+    border-radius: 50vh;
+    width: 75vh;
+    height: 70vh;
+    position: relative;
+}
+
+.elemen {
+    position: absolute;
+    width: 75vh;
+    height: 70vh;
+}
+
+/* tombol navigasi */
+.navigasi {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+#nav{ 
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    position: fixed;
+    bottom: 5vh;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#nav .isi-navigasi {
+    padding: 10px;
+    margin: 5px;
+    background-color: #5f4a3e;
+    border-radius: 25px;  
+}
+
+#nav .isi-navigasi li{
+    list-style: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 0px;
+    padding: 5px 10px;
+    color: white;
+}
+
+#nav .isi-navigasi li:hover{
+    background-color: #2d2c2cf0;
+    border-radius: 18px;
+    transition: 250ms;
+    padding-left: 15px;
+    padding-right:15px;
+}
+
+/* music */
+#musicControl {
+    background-color: #916c57;
+    border-radius: 30px;
+    margin: 0px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 5vh; 
+    right: 10px;
+    z-index: 2;
+}
+
+#musicControl:hover {
+    opacity: 0.8;
+    background-color: #2d2c2cf0;
+}
+
+#musicControl img {
+    width: 50px;
+}
+
+/* ayat al-quran */
+.qoutes {
+    padding: 50px 20px;
+    text-align: center;
+    color: #805C3E;
+    background-color: #F1E0C5;
+}
+
+.qoutes h3 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.qoutes p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.qoutes img {
+    width: 100px;
+}
+/* profil kedua mempelai */
+.profil {
+    background: #D3B892 ;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.profil h2{
+    margin-top: 15px;
+}
+
+/* instagram */
+.profil i {
+    font-size: 30px;
+    margin-top: 10px;
+    background: linear-gradient(50deg, #E1306C, #833AB4, #833AB4, #E1306C, #FD1D1D, #FCAF45, #405DE6);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.profil a {
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 20px;
+    color: #000000;
+}
+
+.profil img{
+    margin: 30px 0 0 0;
+    width: 50vh;
+    opacity: 0.8;
+    border-radius: 30vh;
+    gap: 20px;
+}
+
+.asset-dan img {
+    z-index: 1;
+    width: 10px;
+}
+
+/* detail acara */
+.detail-acara {
+    padding: 50px 20px;
+    background: #C1A17F;
+    color: #333;
+    text-align: center;
+}
+
+.detail-acara h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.info-acara {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.isi-acara {
+    width: 300px;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.isi-acara h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.isi-acara p {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* tombol save date */
+.date {
+    height: 50px;
+    width: 30vh;
+    background: #5f4a3e;
+    border-radius: 50px;
+    border: none;
+    text-decoration: none;
+    margin-top: 15px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: large;
+    overflow: hidden;
+}
+
+.date:hover {
+    background-color: #2d2c2cf0;
+    transform: scale(1.05); 
+}
+
+/* maps */
+.invitation {
+    padding: 20px;
+}
+
+iframe {
+    border-radius: 20px;
+}
+
+/* waktu perhari */
+.hitung-mundur {
+    padding: 20px;
+}
+
+#hitung {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.waktu {
+    background-color: #7b6b5f;
+    padding: 20px 15px;
+    border-radius: 8px;
+    width: 90px;
+    text-align: center;
+}
+
+.number {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+    transition: transform 0.5s ease-in-out;
+}
+
+.label {
+    font-size: 24px;
+    font-weight: 300;
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+.time-box:hover .number {
+    transform: scale(1.1);
+}
+
+/* story */
+.story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F3E8D2;
+    color: #805C3E;
+    text-align: center;
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+.story h2 {
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.section-story {
+    padding: 35px 0;
+    margin-top: 20px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.scroll-story {
+    display: flex;
+    animation: scroll 30s linear infinite;
+    white-space: nowrap;
+}
+
+.isi-story {
+    text-align: center;
+    width: 300px;
+    margin: 0 10px;
+    flex-shrink: 0; 
+}
+
+.gambar-story {
+    width: 100%;
+    border-radius: 60% / 40%;
+    height: 350px;
+    overflow: hidden;
+    width: 250px;
+}
+
+.gambar-story img {
+    width: 100%;
+    object-fit: cover; 
+    height: 100%;
+}
+
+.text-story h3 {
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+.text-story {
+    margin-right: 35px;
+}
+
+.story-video {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+/* gallery photo pengantin */
+.gallery-container {
+    background-color: #F1E0C5;
+    color: #805C3E;
+    padding-top: 30px;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.gallery {
+    margin-top: 30px;
+    display: flex;
+    animation: scroll 24s linear infinite;
+}
+
+.gallery img {
+    height: 400px; 
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.gallery-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    padding: 30px 0;
+}
+
+.gallery-video video {   
+    width: 140vh;
+}
+
+/* tamu spesial */
+.tamu-khusus {
+    background: #D3B892;
+    padding: 30px 0;
+}
+
+.section-tamu-khusus {
+    max-width: 800px;
+    margin: 0px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.tamu h2 {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+#table-tamu {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 12px;
+    vertical-align: middle;
+}
+
+th {
+    color: white;
+    background-color: #8B4513;
+}
+
+td {
+    background-color: #fff5e6;
+}
+
+td img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+th[rowspan] {
+    vertical-align: middle;
+}
+
+th[colspan] {
+    text-align: center;
+}
+
+/* rsvp */
+.formulir {
+    background:#C1A17F;
+    padding: 30px 0;
+}
+
+.rsvp {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    margin-left: 60vh;
+}
+
+form {
+    display: grid;
+    gap: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="number"], input[type="email"], select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    height: 120px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none; 
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+button {
+    background-color: #7b6b5f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5f4a3e;
+}
+
+/* Pengiriman hadiah */
+.gift-img {
+    width: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+}  
+
+.transfer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.transfer-option {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+.transfer-option ul {
+    list-style: none;
+    padding: 0;
+}
+
+.transfer-option ul li {
+    margin-bottom: 10px;
+}
+
+.transfer-option h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.bank-details {
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.8;
+}
+.bank-details span {
+    font-weight: bold;
+}
+
+.gift-section,
+.message-section,
+.thank-you-section {
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    background-color: #fff;
+    border-radius: 8px;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.copy-button,
+.submit-button {
+    background-color: #7b6b5f;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.copy-button:hover,
+.submit-button:hover {
+    background-color: #5f4a3e;
+}
+
+/* pesan untuk pengantin */
+.message {
+    background-color: #F1E0C5;
+    padding-top: 20px;
+}
+
+.message img {
+    width: 100px;
+}
+
+.message-img {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container-message {
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #e0d7ce;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 600px;
+}
+
+.message-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.text-form, .message-box {
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid #e0d7ce;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #f5f0eb;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.text-form:focus, .message-box:focus {
+    border-color: #c3b4a4;
+    outline: none;
+}
+
+.message-box {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.text-form::placeholder, .message-box::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+.submit-button {
+    padding: 12px;
+    background-color: #7b6b5f;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-button:hover {
+    background-color: #5f4a3e;
+    transform: translateY(-2px);
+}
+
+.submit-button:active {
+    transform: translateY(0);
+}
+
+.messages-section {
+    margin-top: 30px;
+    max-height: 200px;
+    overflow-y: auto;
+    padding-right: 8px;
+    border-top: 1px solid #e0d7ce;
+    padding-top: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.message-card {
+    background-color: #f9f5f0;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid #7b6b5f;
+    transition: transform 0.2s ease;
+}
+
+.message-card:hover {
+    transform: translateY(-3px);
+}
+
+.message-card p {
+    margin: 0;
+    line-height: 1.4;
+}
+
+.author {
+    font-size: 12px;
+    color: #555;
+    margin-top: 8px;
+}
+
+.quote {
+    color: #7b6b5f;
+    font-size: 16px;
+}
+
+/* terimakasih */
+.thank-you {
+    background: #D3B892;
+    padding-top: 30px;
+}
+.thank-you-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.footer {
+    overflow: hidden;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .isiCover {
+        height: auto;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 20vh;
+    }
+
+    .fotoCover {
+        margin: 0;
+        border-radius: 50vh;
+        width: 60vh;
+        height: 55vh;
+        position: relative;
+    }
+    
+    .elemen {
+        position: absolute;
+        width: 60vh;
+        height: 55vh;
+    }
+
+    .text2 {
+        margin-left: 20px;
+    }
+
+    #musicControl {
+        bottom: 15vh; 
+    }
+    #musicControl img {
+        width: 40px;
+    }
+
+    .fotoCover {
+        margin: 0 0 20px 0;
+    }
+
+    .tombol-menu {
+        display: flex;
+    }
+
+    .qoutes {
+        padding: 0 2vh;
+    }
+    
+    .profil {
+        padding: 10px;
+        flex-direction: column;
+    }
+    
+    .profil img{
+        margin: 0 5px 0 5px;
+        width: 30vh;
+    }
+    
+    .pria h2 {
+        padding-top: 5vh;
+    }
+
+    .asset-dan img{
+        margin-left: 10vh;
+    }
+
+    .detail-acara {
+        padding: 50px 20px;
+        background: #C1A17F;
+        color: #333;
+        text-align: center;
+    }
+    
+    .countdown-wrapper {
+        padding: 15px;
+        margin: 0 80px 0 80px;
+    }
+
+    #countdown {
+        display: flex;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .time-box {
+        padding: 18px 18px;
+        border-radius: 8px;
+        width: 85px;
+        text-align: center;
+        position: relative;
+    }
+
+    .number {
+        font-size: 40px;
+        font-weight: bold;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .invitation {
+        width: 347px;
+        height: 280px;
+        padding: 20px 15px 10px 0px;
+        border-radius: 10px;
+    }
+
+    .timeline-item {
+        width: 250px;
+    }
+
+    .timeline-image {
+        max-width: 220px;
+        height: 280px;
+    }
+
+    .story h2 {
+        font-size: 28px;
+    }
+    .transfer-option {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .rsvp {
+        margin-left: 60px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .navigasi {
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+    #nav{ 
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+        position: fixed;
+        bottom: 3vh;
+        width: 90%;
+        z-index: 1;
+        overflow: hidden;
+    }
+    
+    #nav ul{
+        padding: 8px;
+        margin: 5px;
+        background-color: #5f4a3e;
+        border-radius: 25px;  
+    }
+    
+    #nav ul li{
+        display: inline-block;
+        margin: 0px;
+        padding: 5px 10px;
+        color: white;
+    }
+      
+    #nav ul li {
+        font-size: 25px;
+        color: #fff;
+    }
+    
+    #nav ul li:hover{
+        background-color: #2d2c2cf0;
+        border-radius: 18px;
+        transition: 250ms;
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+    
+    #nav img {
+        width: 20px;
+    }
+
+    .info-acara {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+    } 
+
+    #musicControl {
+        bottom: 15vh;
+        right: 5px;
+        overflow-x: hidden;
+    }
+
+    #musicControl img {
+        width: 38px;
+    }
+
+    .countdown-wrapper {
+        padding: 10px;
+        margin: 0 60px 0 60px;
+    }
+
+    #countdown {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    th, td {
+        font-size: 12px;
+        padding: 8px;
+    }
+    
+    td img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .gallery-video video {
+        max-width: 95%;  
+    }
+
+    .rsvp {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .detail-acara {
+        padding: 50px 5px;
+        background: #C1A17F;
+        color: #333;
+        text-align: center;
+    }
+}
