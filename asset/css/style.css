@@ -29,6 +29,9 @@ html {
     padding: 0;
     overflow: hidden;
 }
+.elemen-koki {
+    display: fixed;
+}
 
 .text {
     margin-top: 20vh;
@@ -273,6 +276,7 @@ p{
     background: #C1A17F;
     color: #333;
     text-align: center;
+    overflow: hidden;
 }
 
 .detail-acara h2 {
@@ -326,6 +330,7 @@ p{
 /* maps */
 .invitation {
     padding: 20px;
+    overflow: hidden;
 }
 
 iframe {
@@ -335,7 +340,7 @@ iframe {
 /* waktu perhari */
 .hitung-mundur {
     padding: 20px;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 #hitung {
@@ -366,7 +371,7 @@ iframe {
     margin-top: 5px;
 }
 
-.time-box:hover .number {
+.waktu:hover .number {
     transform: scale(1.1);
 }
 
@@ -672,6 +677,7 @@ button:hover {
 .message {
     background-color: #F1E0C5;
     padding-top: 20px;
+    overflow: hidden;
 }
 
 .message img {
@@ -791,6 +797,7 @@ button:hover {
 .thank-you {
     background: #D3B892;
     padding-top: 30px;
+    overflow: hidden;
 }
 .thank-you-section {
     text-align: center;
@@ -883,33 +890,26 @@ button:hover {
         text-align: center;
     }
     
-    .countdown-wrapper {
+    .hitung-mundur {
         padding: 15px;
-        margin: 0 80px 0 80px;
     }
 
-    #countdown {
+    #hitung{
         display: flex;
         justify-content: center;
         gap: 18px;
     }
 
-    .time-box {
-        padding: 18px 18px;
-        border-radius: 8px;
-        width: 85px;
-        text-align: center;
-        position: relative;
-    }
-
     .number {
-        font-size: 40px;
-        font-weight: bold;
-        transition: transform 0.5s ease-in-out;
+        font-size: 30px;
+    }
+    
+    .label {
+        font-size: 20px;
     }
 
     .invitation {
-        width: 347px;
+        width: 340px;
         height: 280px;
         padding: 20px 15px 10px 0px;
         border-radius: 10px;
@@ -1001,12 +1001,11 @@ button:hover {
         width: 38px;
     }
 
-    .countdown-wrapper {
+    .hitung-mundur{
         padding: 10px;
-        margin: 0 60px 0 60px;
     }
 
-    #countdown {
+    #hitung {
         display: flex;
         justify-content: center;
         gap: 15px;
