@@ -335,6 +335,7 @@ iframe {
 /* waktu perhari */
 .hitung-mundur {
     padding: 20px;
+    overflow-x: hidden;
 }
 
 #hitung {
@@ -839,9 +840,10 @@ button:hover {
 
     #musicControl {
         bottom: 15vh; 
+        margin-right: 10px;
     }
     #musicControl img {
-        width: 40px;
+        width: 35px;
     }
 
     .fotoCover {
