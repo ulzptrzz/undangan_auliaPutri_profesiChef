@@ -190,7 +190,7 @@ p{
     cursor: pointer;
     position: fixed;
     bottom: 5vh; 
-    right: 15px;
+    right: 20px;
     z-index: 2;
     overflow: hidden;
 }
