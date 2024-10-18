@@ -656,6 +656,8 @@ button:hover {
     margin: 20px auto;
     width: 90%;
     background-color: #fff;
+    overflow: hidden;
+    align-items: center;
     border-radius: 8px;
     max-width: 600px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -891,7 +893,6 @@ button:hover {
     }
 
     .detail-acara {
-        padding: 50px 20px;
         background: #C1A17F;
         color: #333;
         text-align: center;
@@ -1032,6 +1033,13 @@ button:hover {
 
     .rsvp {
         margin-left: 0;
+    }
+
+    .invitation {
+        width: 310px;
+        height: 280px;
+        padding: 17px 14px 10px 0px;
+        border-radius: 10px;
     }
 }
 
