@@ -406,7 +406,7 @@ iframe {
 
 .scroll-story {
     display: flex;
-    animation: scroll 30s linear infinite;
+    animation: scroll 20s linear infinite;
     white-space: nowrap;
 }
 
@@ -616,12 +616,14 @@ button:hover {
 }  
 
 .transfer {
+    overflow: hidden;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .transfer-option {
+    overflow: hidden;
     width: 48%;
     margin-bottom: 20px;
 }
