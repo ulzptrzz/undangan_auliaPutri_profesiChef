@@ -56,6 +56,25 @@ document.getElementById('save-date-btn').addEventListener('click', function() {
   window.open(url, '_blank');
 });
 
+document.getElementById('save-date').addEventListener('click', function() {
+  // Definisikan parameter acara pernikahan
+  var title = 'Pernikahan Belva & Citra';
+  var details = 'Jangan lewatkan hari bahagia kami! Acara pernikahan kami akan diadakan pada 5 Juni 2029.';
+  var location = 'Mall Summarecon Bekasi, Jl. Boulevard Barat Raya No.1, Bekasi';
+  var startTime = '20290605T150000';
+  var endTime = '20290605T180000';   
+  
+  // URL untuk menambahkan acara ke Google Calendar
+  var url = 'https://www.google.com/calendar/render?action=TEMPLATE' +
+            '&text=' + encodeURIComponent(title) +
+            '&details=' + encodeURIComponent(details) +
+            '&location=' + encodeURIComponent(location) +
+            '&dates=' + encodeURIComponent(startTime) + '/' + encodeURIComponent(endTime);
+  
+  // Buka URL di tab baru
+  window.open(url, '_blank');
+});
+
 //waktu sebelum acara
 const startCountdown = () => {
 
@@ -92,6 +111,14 @@ const timerInterval = setInterval(startCountdown, 500);
 function copyToClipboard(text) {
   navigator.clipboard.writeText(text).then(function() {
       alert('No. Rekening berhasil disalin: ' + text);
+  }, function(err) {
+      console.error('Could not copy text: ', err);
+  });
+}
+
+function copyClipboard(text) {
+  navigator.clipboard.writeText(text).then(function() {
+      alert('Alamat pengiriman berhasil disalin: ' + text);
   }, function(err) {
       console.error('Could not copy text: ', err);
   });

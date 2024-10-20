@@ -313,14 +313,13 @@ p{
 
 /* tombol save date */
 .date {
-    height: 50px;
-    width: 30vh;
     background: #5f4a3e;
     border-radius: 50px;
     border: none;
     text-decoration: none;
     margin-top: 15px;
     color: #ffffff;
+    padding: 15px 50px;
     cursor: pointer;
     font-size: large;
     overflow: hidden;
@@ -328,7 +327,7 @@ p{
 
 .date:hover {
     background-color: #2d2c2cf0;
-    transform: scale(1.05); 
+
 }
 
 /* maps */
@@ -619,13 +618,13 @@ button:hover {
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .transfer-option {
     overflow: hidden;
     width: 48%;
-    margin-bottom: 20px;
+    margin: 35px 0;
 }
 
 .transfer-option ul {
@@ -656,12 +655,10 @@ button:hover {
 .thank-you-section {
     padding: 20px;
     margin: 20px auto;
-    width: 90%;
     background-color: #fff;
     overflow: hidden;
     align-items: center;
     border-radius: 8px;
-    max-width: 600px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -937,8 +934,9 @@ button:hover {
     .story h2 {
         font-size: 28px;
     }
+
     .transfer-option {
-        width: 100%;
+        width: 80%;
         margin-bottom: 15px;
     }
 
@@ -1017,6 +1015,14 @@ button:hover {
         display: flex;
         justify-content: center;
         gap: 15px;
+    }
+
+    .number {
+        font-size: 25px;
+    }
+    
+    .label {
+        font-size: 15px;
     }
 
     th, td {
