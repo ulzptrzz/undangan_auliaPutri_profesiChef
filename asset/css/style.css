@@ -651,8 +651,7 @@ button:hover {
 }
 
 .gift-section,
-.message-section,
-.thank-you-section {
+.message-section {
     padding: 20px;
     margin: 20px auto;
     background-color: #fff;
@@ -807,9 +806,15 @@ button:hover {
     padding-top: 30px;
     overflow: hidden;
 }
+
 .thank-you-section {
     text-align: center;
+    background-color: #fff;
     margin-bottom: 30px;
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .footer {
