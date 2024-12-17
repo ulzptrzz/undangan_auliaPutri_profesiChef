@@ -107,20 +107,27 @@ const startCountdown = () => {
 const timerInterval = setInterval(startCountdown, 500);
 
 
-// hadiah
 function copyToClipboard(text) {
   navigator.clipboard.writeText(text).then(function() {
       alert('No. Rekening berhasil disalin: ' + text);
-  }, function(err) {
-      console.error('Could not copy text: ', err);
+  }).catch(function(err) {
+      console.error('Tidak dapat menyalin teks: ', err);
+  });
+}
+
+function clipboardCopy(text) {
+  navigator.clipboard.writeText(text).then(function() {
+      alert('No. Rekening berhasil disalin: ' + text);
+  }).catch(function(err) {
+      console.error('Tidak dapat menyalin teks: ', err);
   });
 }
 
 function copyClipboard(text) {
   navigator.clipboard.writeText(text).then(function() {
       alert('Alamat pengiriman berhasil disalin: ' + text);
-  }, function(err) {
-      console.error('Could not copy text: ', err);
+  }).catch(function(err) {
+      console.error('Tidak dapat menyalin teks: ', err);
   });
 }
 

@@ -67,6 +67,7 @@ p{
 .icon-2 {
     width: 35px;
 }
+
 /* tombol open invitation */
 .btn {
     height: 50px;
@@ -248,7 +249,7 @@ p{
     font-size: 30px;
     margin-top: 10px;
     background: linear-gradient(50deg, #E1306C, #833AB4, #833AB4, #E1306C, #FD1D1D, #FCAF45, #405DE6);
-    -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
 }
 
@@ -458,7 +459,7 @@ iframe {
 .gallery {
     margin-top: 30px;
     display: flex;
-    animation: scroll 24s linear infinite;
+    animation: scroll 27s linear infinite;
 }
 
 .gallery img {
@@ -488,10 +489,7 @@ iframe {
 .section-tamu-khusus {
     max-width: 800px;
     margin: 0px auto;
-    background-color: #ffffff;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
 }
 
 .tamu h2 {
@@ -507,7 +505,7 @@ iframe {
 }
 
 th, td {
-    border: 1px solid #dddddd;
+    border: 1px solid #D3B892;
     text-align: left;
     padding: 12px;
     vertical-align: middle;
@@ -594,7 +592,7 @@ legend {
     font-weight: bold;
 }
 
-button {
+.btn-rsvp {
     background-color: #7b6b5f;
     color: white;
     border: none;
@@ -603,28 +601,42 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.btn-rsvp:hover {
     background-color: #5f4a3e;
 }
 
 /* Pengiriman hadiah */
+.gift-section {
+    padding: 30px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.transfer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+}
+
+.transfer-option {
+    width: 45%;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.transfer-option:hover {
+    transform: scale(1.02);
+}
+
 .gift-img {
     width: 50px;
     vertical-align: middle;
     margin-right: 10px;
-}  
-
-.transfer {
-    overflow: hidden;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.transfer-option {
-    overflow: hidden;
-    width: 48%;
-    margin: 35px 0;
 }
 
 .transfer-option ul {
@@ -634,11 +646,15 @@ button:hover {
 
 .transfer-option ul li {
     margin-bottom: 10px;
+    color: #5f4a3e;
 }
 
 .transfer-option h4 {
     font-size: 18px;
     margin-bottom: 10px;
+    color: #5f4a3e;
+    border-bottom: 2px solid #7b6b5f;
+    padding-bottom: 5px;
 }
 
 .bank-details {
@@ -646,38 +662,30 @@ button:hover {
     text-align: left;
     line-height: 1.8;
 }
+
 .bank-details span {
     font-weight: bold;
+    color: #5f4a3e;
 }
 
-.gift-section,
-.message-section {
-    padding: 20px;
-    margin: 20px auto;
-    background-color: #fff;
-    overflow: hidden;
-    align-items: center;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.copy-button,
-.submit-button {
-    background-color: #7b6b5f;
-    display: block;
-    width: 100%;
-    padding: 10px;
-    color: white;
+.copy-button-gift {
+    background: #7b6b5f;
+    border-radius: 50px;
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
+    color: #ffffff;
+    padding: 15px 50px;
     cursor: pointer;
-    text-align: center;
+    font-size: large;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+    position: relative;
+    overflow: hidden;
 }
 
-.copy-button:hover,
-.submit-button:hover {
-    background-color: #5f4a3e;
+.copy-button-gift:hover {
+    background: #35312e;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* pesan untuk pengantin */
@@ -809,12 +817,9 @@ button:hover {
 
 .thank-you-section {
     text-align: center;
-    background-color: #fff;
     margin-bottom: 30px;
     padding: 20px;
     overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .footer {
@@ -827,6 +832,20 @@ button:hover {
     }
     100% {
         transform: translateX(-100%);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .profil {
+        padding: 30px 20px;
+    }
+
+    .profil img {
+        width: 40vh;
+    }
+
+    .asset-dan {
+        max-height: 300px;
     }
 }
 
@@ -940,34 +959,38 @@ button:hover {
         font-size: 28px;
     }
 
-    .transfer-option {
-        width: 80%;
-        margin-bottom: 15px;
+    .transfer {
+        flex-direction: column;
+        align-items: center;
     }
 
+    .transfer-option {
+        width: 90%;
+        max-width: 100%;
+    }
+
+    .table-formulir-container {
+        overflow-x: auto;
+    }
+    
+}
+
+@media (min-width: 768px) {
+    .table-formulir-container {
+      overflow-x: visible;
+    }
 }
 
 @media only screen and (max-width: 600px) {
-    .navigasi {
-        display: flex;
-        justify-content: center;
-        overflow: hidden;
-    }
     #nav{ 
-        display: flex;
-        justify-content: center;
         margin: 0px;
-        position: fixed;
         bottom: 3vh;
         width: 90%;
-        z-index: 1;
-        overflow: hidden;
     }
     
     #nav ul{
         padding: 8px;
         margin: 5px;
-        background-color: #5f4a3e;
         border-radius: 25px;  
     }
     
@@ -975,16 +998,13 @@ button:hover {
         display: inline-block;
         margin: 0px;
         padding: 5px 10px;
-        color: white;
     }
       
     #nav ul li {
         font-size: 25px;
-        color: #fff;
     }
     
     #nav ul li:hover{
-        background-color: #2d2c2cf0;
         border-radius: 18px;
         transition: 250ms;
         padding-left: 13px;

@@ -348,27 +348,42 @@
               <label for="message-form">Pesan: </label>
               <textarea id="message-form" name="message" rows="4"></textarea>
               <!--Tommbol submit-->
-              <button type="submit-form">Submit</button>
+              <button class="btn-rsvp" type="submit-form">Submit</button>
             </form>
           </section>
       </section>
         <!-- Pengiriman hadiah-->
-        <section class="gift-section" id="gift" data-aos="fade-up" data-aos-duration="2000">
+        <section class="gift-section" id="gift" data-aos="fade-right" data-aos-duration="2000">
           <div class="transfer">
-            <h2 class="section-title">Kirim Hadiah <img class="icon" src="./asset/img/gift-regular-24.png" alt="icon" /></h2>
             <div class="transfer-option">
               <h4>Transfer </h4>
               <p>Kamu bisa transfer ke rekening yang tertera dibawah ini:</p>
               <div class="bank-details">
                 <img src="./asset/img/atm2.png" alt="ATM" class="gift-img">
                 <ul>
-                  <li><span>No. Rek:</span> 0660580697</li>
+                  <li><span>No. Rek:</span> 06890776569654 </li>
                   <li><span>Atas Nama:</span> Citrananda Dahayu Olympia</li>
                 </ul>
-                <button class="copy-button" onclick="copyToClipboard('0660580697')">Copy No. Rek</button>
+                <center>
+                  <button class="copy-button-gift" onclick="copyToClipboard('06890776569654')">Copy No. Rek</button>    
+                </center>
               </div>
             </div>
-            <div class="transfer-option">
+            <div class="transfer-option" data-aos="fade-up" data-aos-duration="2000" >
+              <h4>Transfer </h4>
+              <p>Kamu bisa transfer ke rekening yang tertera dibawah ini:</p>
+              <div class="bank-details">
+                <img src="./asset/img/atm2.png" alt="ATM" class="gift-img">
+                <ul>
+                  <li><span>No. Rek:</span> 09378274653743 </li>
+                  <li><span>Atas Nama:</span> Belva Hamdan Nadir </li>
+                </ul>
+                <center>
+                  <button class="copy-button-gift" onclick="clipboardCopy('09378274653743')">Copy No. Rek</button>    
+                </center>
+              </div>
+            </div>
+            <div class="transfer-option" data-aos="fade-left" data-aos-duration="2000">
               <h4>Kirim Kado </h4>
               <p>Kamu bisa memberikan hadiah ke alamat yang tertera: </p>
               <div class="bank-details">
@@ -377,7 +392,9 @@
                   <li><span>Jalan: </span>jalan kelapa parut 4 no. 210 Rt03/Rw18, Kota Bekasi</li>
                   <li><span>Rumah: </span>Belva Hamdan Nadir</li>
                 </ul>
-                <button class="copy-button" onclick="copyClipboard('jalan kelapa parut 4 no. 210 Rt03/Rw18, Kota Bekasi')">Copy Alamat</button>
+                <center>
+                  <button class="copy-button-gift" onclick="copyClipboard('jalan kelapa parut 4 no. 210 Rt03/Rw18, Kota Bekasi')">Copy Alamat</button>
+                </center>
               </div>
             </div>
           </div>
