@@ -519,13 +519,6 @@ td {
     background-color: #fff5e6;
 }
 
-td img {
-    width: 80px;
-    height: 60px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
 th[rowspan] {
     vertical-align: middle;
 }
@@ -1077,10 +1070,9 @@ legend {
         font-size: 12px;
         padding: 8px;
     }
-    
-    td img {
-        width: 50px;
-        height: 50px;
+
+    .no-tamu {
+        font-size: 9px;
     }
 
     .gallery-video video {
