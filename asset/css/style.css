@@ -10,6 +10,7 @@ html {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+
 /* halaman awal */
 .cover {
     background-image: linear-gradient(to left, rgba(44, 44, 44, 0.5), rgba(56, 56, 56, 0.5)), url("../asset/../img/nikah.jpeg");
@@ -29,6 +30,7 @@ html {
     padding: 0;
     overflow: hidden;
 }
+
 .elemen-koki {
     display: fixed;
 }
@@ -43,6 +45,7 @@ html {
 .text2 {
     padding: 30vh 0 20vh 0;
 }
+
 /* pengaturan teks */
 h1{
     font-size: 50px;
@@ -230,6 +233,7 @@ p{
 .qoutes img {
     width: 100px;
 }
+
 /* profil kedua mempelai */
 .profil {
     background: #D3B892 ;
@@ -244,13 +248,9 @@ p{
     margin-top: 15px;
 }
 
-/* instagram */
-.profil i {
-    font-size: 30px;
-    margin-top: 10px;
-    background: linear-gradient(50deg, #E1306C, #833AB4, #833AB4, #E1306C, #FD1D1D, #FCAF45, #405DE6);
-    background-clip: text;
-    color: transparent;
+.icon-profile {
+    width: 35px;
+    margin-top: 5px;
 }
 
 .profil a {
@@ -260,12 +260,11 @@ p{
     color: #000000;
 }
 
-.profil img{
+.img-profile {
     margin: 30px 0 0 0;
     width: 50vh;
     opacity: 0.8;
     border-radius: 30vh;
-    gap: 20px;
 }
 
 .asset-dan img {
@@ -840,7 +839,7 @@ legend {
         padding: 30px 20px;
     }
 
-    .profil img {
+    .img-profile {
         width: 40vh;
     }
 
@@ -850,6 +849,24 @@ legend {
 }
 
 @media only screen and (max-width: 768px) {
+    .open {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        overflow: hidden;
+    }
+
+    .open p {
+        font-size: 14px;
+        margin-left: 4px;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+    
+    .open i {
+        font-size: 18px;
+    }
+    
     .isiCover {
         height: auto;
         padding: 0px;
@@ -902,7 +919,7 @@ legend {
         flex-direction: column;
     }
     
-    .profil img{
+    .img-profile {
         margin: 0 5px 0 5px;
         width: 30vh;
     }
@@ -924,6 +941,12 @@ legend {
     .hitung-mundur {
         padding: 15px;
     }
+
+    .info-acara {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    } 
 
     #hitung{
         display: flex;
