@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script:wght@400..700&family=Playfair+Display:wght@400;700&family=Alex+Brush&family=Cinzel:wght@400;700&family=Parisienne&family=Lobster&family=Marck+Script&display=swap');
 
-* {
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Dancing Script', cursive;
 }
 
@@ -14,24 +13,6 @@ html {
 
 h1, h2, h3, p, label, legend {
     color: #805C3E;
-}
-
-.icon-gold, .icon-gold-2 {
-    color: #805C3E !important;
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 8px;
-}
-
-.icon-gold-2 {
-    font-size: 35px;
-}
-
-.icon-profile-gold {
-    color: #805C3E !important;
-    font-size: 35px;
-    vertical-align: middle;
-    margin-top: 5px;
 }
 
 .cover {
@@ -72,20 +53,28 @@ h1, h2, h3, p, label, legend {
     padding: 30vh 0 20vh 0;
 }
 
-h1 {
+h1{
     font-size: 50px;
     font-weight: 700;
 }
 
-h2 {
+h2{
     font-size: 30px;
     font-weight: 700;
 }
 
-p {
+p{
     font-size: 22px;
     font-weight: 500;
     margin-top: 5px;
+}
+
+.icon {
+    width: 27px;
+}
+
+.icon-2 {
+    width: 35px;
 }
 
 .btn {
@@ -102,6 +91,10 @@ p {
     cursor: pointer;
     display: inline-flex;
     transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.btn p {
+    color: #ffffff;
 }
 
 .btn:hover {
@@ -121,12 +114,10 @@ p {
     margin-left: 4px;
     font-weight: 700;
     letter-spacing: 1px;
-    color: #ffffff;
 }
 
 .open i {
     font-size: 25px;
-    color: #ffffff;
 }
 
 .coverKedua {
@@ -169,8 +160,7 @@ p {
     justify-content: center;
     overflow: hidden;
 }
-
-#nav { 
+#nav{ 
     display: flex;
     justify-content: center;
     margin: 0px;
@@ -188,24 +178,21 @@ p {
     border-radius: 25px;  
 }
 
-#nav .isi-navigasi li {
+#nav .isi-navigasi li{
     list-style: none;
     display: inline-block;
     font-size: 25px;
     margin: 0px;
     padding: 5px 10px;
+    color: white;
 }
 
-#nav .isi-navigasi li i {
-    color: #ffffff;
-}
-
-#nav .isi-navigasi li:hover {
+#nav .isi-navigasi li:hover{
     background-color: #805C3E;
     border-radius: 18px;
     transition: 250ms;
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right:15px;
 }
 
 #musicControl {
@@ -247,13 +234,12 @@ p {
     font-weight: 500;
     margin-bottom: 15px;
 }
-
 .qoutes img {
     width: 100px;
 }
 
 .profil {
-    background: #D3B892;
+    background: #D3B892 ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -261,8 +247,13 @@ p {
     overflow: hidden;
 }
 
-.profil h2 {
+.profil h2{
     margin-top: 15px;
+}
+
+.icon-profile {
+    width: 35px;
+    margin-top: 5px;
 }
 
 .profil a {
@@ -296,6 +287,7 @@ p {
 .detail-acara h2 {
     font-size: 2.5em;
     margin-bottom: 40px;
+    color: #805C3E;
 }
 
 .info-acara {
@@ -315,11 +307,13 @@ p {
 .isi-acara h3 {
     font-size: 1.8em;
     margin-bottom: 20px;
+    color: #805C3E;
 }
 
 .isi-acara p {
     font-size: 24px;
     margin-bottom: 10px;
+    color: #805C3E;
 }
 
 .date {
@@ -497,6 +491,7 @@ iframe {
 
 .tamu h2 {
     text-align: center;
+    color: #805C3E;
     margin-bottom: 20px;
 }
 
@@ -515,7 +510,7 @@ th, td {
 
 th {
     color: white;
-    background-color: #805C3E;
+    background-color: #8B4513;
 }
 
 td {
@@ -536,104 +531,70 @@ th[colspan] {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background: #C1A17F;
-    padding: 50px 0;
+    background:#C1A17F;
+    padding: 30px 0;
 }
 
 .rsvp {
-    background: #ffffff;
-    padding: 35px 30px;
-    border-radius: 15px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
     width: 100%;
     max-width: 600px;
     box-sizing: border-box;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(128, 92, 62, 0.2);
 }
 
 .rsvp h2 {
-    text-align: center;
-    font-size: 34px;
-    margin-bottom: 25px;
+    color: #805C3E;
 }
 
 form {
     display: grid;
-    gap: 18px;
+    gap: 15px;
 }
 
 label {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: -5px;
+    display: block;
+    margin-bottom: 5px;
 }
 
 input[type="text"], input[type="number"], input[type="email"], select {
     width: 100%;
-    padding: 12px;
-    border: 1px solid #D3B892;
-    border-radius: 8px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
     box-sizing: border-box;
-    background-color: #fffcf7;
     color: #805C3E;
-    font-size: 16px;
 }
 
 textarea {
     width: 100%;
     height: 120px;
-    padding: 12px;
-    border: 1px solid #D3B892;
-    border-radius: 8px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
     box-sizing: border-box;
     resize: none; 
-    background-color: #fffcf7;
     color: #805C3E;
-    font-size: 16px;
-}
-
-input:focus, select:focus, textarea:focus {
-    outline: none;
-    border-color: #805C3E;
-    box-shadow: 0 0 5px rgba(128, 92, 62, 0.3);
 }
 
 fieldset {
-    border: 1px dashed #D3B892;
-    border-radius: 8px;
-    padding: 15px;
-    background-color: #fffcf7;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
 }
 
 legend {
     font-weight: bold;
-    font-size: 16px;
-    padding: 0 8px;
-}
-
-fieldset label {
-    display: block;
-    font-size: 16px;
-    font-weight: 500;
-    margin: 8px 0;
-    cursor: pointer;
-}
-
-fieldset input[type="radio"], fieldset input[type="checkbox"] {
-    margin-right: 8px;
-    accent-color: #805C3E;
 }
 
 .btn-rsvp {
-    background-color: #805C3E;
+    background-color: #7b6b5f;
     color: white;
     border: none;
-    padding: 14px;
-    border-radius: 8px;
+    padding: 10px 15px;
+    border-radius: 4px;
     cursor: pointer;
-    font-size: 18px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
 }
 
 .btn-rsvp:hover {
@@ -748,6 +709,10 @@ fieldset input[type="radio"], fieldset input[type="checkbox"] {
     max-width: 600px;
 }
 
+.container-message h2 {
+    color: #805C3E;
+}
+
 .message-form {
     display: flex;
     flex-direction: column;
@@ -792,7 +757,7 @@ fieldset input[type="radio"], fieldset input[type="checkbox"] {
 }
 
 .submit-button:hover {
-    background-color: #805C3E;
+    background-color: #5f4a3e;
     transform: translateY(-2px);
 }
 
@@ -1032,6 +997,7 @@ fieldset input[type="radio"], fieldset input[type="checkbox"] {
     .table-formulir-container {
         overflow-x: auto;
     }
+    
 }
 
 @media (min-width: 768px) {
