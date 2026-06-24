@@ -11,7 +11,10 @@ html {
     overflow-x: hidden;
 }
 
-/* halaman awal */
+h1, h2, h3, p, label, legend {
+    color: #805C3E;
+}
+
 .cover {
     background-image: linear-gradient(to left, rgba(44, 44, 44, 0.5), rgba(56, 56, 56, 0.5)), url("../asset/../img/nikah.jpeg");
     background-size: cover;
@@ -22,6 +25,10 @@ html {
     transition: opacity 1s ease-in-out; 
     opacity: 0.9;
     overflow: hidden;
+}
+
+.cover h1, .cover h2, .cover p {
+    color: #ffffff;
 }
 
 .cover img {
@@ -46,7 +53,6 @@ html {
     padding: 30vh 0 20vh 0;
 }
 
-/* pengaturan teks */
 h1{
     font-size: 50px;
     font-weight: 700;
@@ -71,7 +77,6 @@ p{
     width: 35px;
 }
 
-/* tombol open invitation */
 .btn {
     height: 50px;
     line-height: 23px;
@@ -88,8 +93,12 @@ p{
     transition: background-color 0.3s ease, transform 0.3s ease; 
 }
 
+.btn p {
+    color: #ffffff;
+}
+
 .btn:hover {
-    background-color: #2d2c2cf0;
+    background-color: #805C3E;
     transform: scale(1.05);
 }
 
@@ -111,7 +120,6 @@ p{
     font-size: 25px;
 }
 
-/* halaman kedua */
 .coverKedua {
     background-color: #F3E8D2;
     display: none;
@@ -120,7 +128,7 @@ p{
     padding: 0;
     transition: opacity 1s ease-in-out;
 }
-/* isi cover */
+
 .isiCover {
     height: 100vh;
     display: flex;
@@ -129,7 +137,6 @@ p{
     overflow: hidden;
 }
 
-/* foto didalam cover kedua */
 .fotoCover {
     background-image: url("../asset/../img/Couple2.jpeg");
     background-repeat: no-repeat;
@@ -148,7 +155,6 @@ p{
     height: 70vh;
 }
 
-/* tombol navigasi */
 .navigasi {
     display: flex;
     justify-content: center;
@@ -182,14 +188,13 @@ p{
 }
 
 #nav .isi-navigasi li:hover{
-    background-color: #2d2c2cf0;
+    background-color: #805C3E;
     border-radius: 18px;
     transition: 250ms;
     padding-left: 15px;
     padding-right:15px;
 }
 
-/* music */
 #musicControl {
     background-color: #916c57;
     border-radius: 30px;
@@ -204,14 +209,13 @@ p{
 
 #musicControl:hover {
     opacity: 0.8;
-    background-color: #2d2c2cf0;
+    background-color: #805C3E;
 }
 
 #musicControl img {
     width: 50px;
 }
 
-/* ayat al-quran */
 .qoutes {
     padding: 50px 20px;
     text-align: center;
@@ -234,7 +238,6 @@ p{
     width: 100px;
 }
 
-/* profil kedua mempelai */
 .profil {
     background: #D3B892 ;
     display: flex;
@@ -272,7 +275,6 @@ p{
     width: 10px;
 }
 
-/* detail acara */
 .detail-acara {
     padding: 50px 20px;
     background: #C1A17F;
@@ -285,6 +287,7 @@ p{
 .detail-acara h2 {
     font-size: 2.5em;
     margin-bottom: 40px;
+    color: #805C3E;
 }
 
 .info-acara {
@@ -304,14 +307,15 @@ p{
 .isi-acara h3 {
     font-size: 1.8em;
     margin-bottom: 20px;
+    color: #805C3E;
 }
 
 .isi-acara p {
     font-size: 24px;
     margin-bottom: 10px;
+    color: #805C3E;
 }
 
-/* tombol save date */
 .date {
     background: #5f4a3e;
     border-radius: 50px;
@@ -326,11 +330,9 @@ p{
 }
 
 .date:hover {
-    background-color: #2d2c2cf0;
-
+    background-color: #805C3E;
 }
 
-/* maps */
 .invitation {
     padding: 20px;
     overflow: hidden;
@@ -340,7 +342,6 @@ iframe {
     border-radius: 20px;
 }
 
-/* waktu perhari */
 .hitung-mundur {
     padding: 20px;
     overflow: hidden;
@@ -378,7 +379,6 @@ iframe {
     transform: scale(1.1);
 }
 
-/* story */
 .story {
     display: flex;
     flex-direction: column;
@@ -445,7 +445,6 @@ iframe {
     padding: 30px 0;
 }
 
-/* gallery photo pengantin */
 .gallery-container {
     background-color: #F1E0C5;
     color: #805C3E;
@@ -479,7 +478,6 @@ iframe {
     width: 140vh;
 }
 
-/* tamu spesial */
 .tamu-khusus {
     background: #D3B892;
     padding: 30px 0;
@@ -517,6 +515,7 @@ th {
 
 td {
     background-color: #fff5e6;
+    color: #805C3E;
 }
 
 th[rowspan] {
@@ -527,7 +526,6 @@ th[colspan] {
     text-align: center;
 }
 
-/* rsvp */
 .formulir {
     display: flex;
     justify-content: center;
@@ -546,6 +544,10 @@ th[colspan] {
     box-sizing: border-box;
 }
 
+.rsvp h2 {
+    color: #805C3E;
+}
+
 form {
     display: grid;
     gap: 15px;
@@ -562,6 +564,7 @@ input[type="text"], input[type="number"], input[type="email"], select {
     border: 1px solid #ddd;
     border-radius: 4px;
     box-sizing: border-box;
+    color: #805C3E;
 }
 
 textarea {
@@ -572,6 +575,7 @@ textarea {
     border-radius: 4px;
     box-sizing: border-box;
     resize: none; 
+    color: #805C3E;
 }
 
 fieldset {
@@ -597,7 +601,6 @@ legend {
     background-color: #5f4a3e;
 }
 
-/* Pengiriman hadiah */
 .gift-section {
     padding: 30px;
     margin: 20px 0;
@@ -676,11 +679,10 @@ legend {
 }
 
 .copy-button-gift:hover {
-    background: #35312e;
+    background: #805C3E;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* pesan untuk pengantin */
 .message {
     background-color: #F1E0C5;
     padding-top: 20px;
@@ -705,6 +707,10 @@ legend {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
     text-align: left;
     max-width: 600px;
+}
+
+.container-message h2 {
+    color: #805C3E;
 }
 
 .message-form {
@@ -800,7 +806,6 @@ legend {
     font-size: 16px;
 }
 
-/* terimakasih */
 .thank-you {
     background: #D3B892;
     padding-top: 30px;
@@ -812,6 +817,10 @@ legend {
     margin-bottom: 30px;
     padding: 20px;
     overflow: hidden;
+}
+
+.thank-you-section h2, .thank-you-section p {
+    color: #805C3E;
 }
 
 .footer {
