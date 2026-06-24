@@ -71,10 +71,12 @@ p{
 
 .icon {
     width: 27px;
+    color: #805C3E;
 }
 
 .icon-2 {
     width: 35px;
+    color: #805C3E;
 }
 
 .btn {
@@ -254,6 +256,7 @@ p{
 .icon-profile {
     width: 35px;
     margin-top: 5px;
+    color: #805C3E;
 }
 
 .profil a {
