@@ -605,85 +605,121 @@ legend {
 }
 
 .gift-section {
-    padding: 30px;
-    margin: 20px 0;
+    padding: 60px 20px;
+    background-color: transparent;
     overflow: hidden;
 }
 
 .transfer {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 25px;
     position: relative;
+    flex-wrap: wrap;
 }
 
 .transfer-option {
-    width: 45%;
-    max-width: 400px;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 340px;
+    background-color: #ffffff;
+    padding: 30px 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(128, 92, 62, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(128, 92, 62, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
 }
 
 .transfer-option:hover {
-    transform: scale(1.02);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(128, 92, 62, 0.2);
+}
+
+.transfer-option h4 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    color: #805C3E;
+    border-bottom: 2px dashed #D3B892;
+    padding-bottom: 8px;
+    width: 100%;
+    font-weight: 700;
+}
+
+.transfer-option p {
+    font-size: 16px;
+    color: #805C3E;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.bank-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
 
 .gift-img {
-    width: 50px;
-    vertical-align: middle;
-    margin-right: 10px;
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+    margin: 0 auto 5px auto;
 }
 
 .transfer-option ul {
     list-style: none;
     padding: 0;
+    width: 100%;
+    text-align: left;
+    background-color: #fffcf7;
+    border: 1px solid #F1E0C5;
+    border-radius: 8px;
+    padding: 15px;
 }
 
 .transfer-option ul li {
-    margin-bottom: 10px;
-    color: #5f4a3e;
-}
-
-.transfer-option h4 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #5f4a3e;
-    border-bottom: 2px solid #7b6b5f;
-    padding-bottom: 5px;
-}
-
-.bank-details {
+    margin-bottom: 8px;
+    color: #805C3E;
     font-size: 16px;
-    text-align: left;
-    line-height: 1.8;
+    line-height: 1.4;
+    word-break: break-word;
+}
+
+.transfer-option ul li:last-child {
+    margin-bottom: 0;
 }
 
 .bank-details span {
     font-weight: bold;
-    color: #5f4a3e;
+    color: #805C3E;
+    display: inline-block;
+    margin-right: 5px;
 }
 
 .copy-button-gift {
     background: #7b6b5f;
-    border-radius: 50px;
+    border-radius: 8px;
     border: none;
     color: #ffffff;
-    padding: 15px 50px;
+    padding: 12px 25px;
     cursor: pointer;
-    font-size: large;
+    font-size: 16px;
+    font-weight: bold;
     transition: all 0.3s ease;
     width: 100%;
-    max-width: 300px;
-    position: relative;
-    overflow: hidden;
+    max-width: 200px;
+    margin-top: 5px;
+    box-shadow: 0 4px 10px rgba(123, 107, 95, 0.3);
 }
 
 .copy-button-gift:hover {
     background: #805C3E;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 15px rgba(128, 92, 62, 0.4);
 }
 
 .message {
