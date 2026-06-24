@@ -276,7 +276,7 @@ p{
 .detail-acara {
     padding: 50px 20px;
     background: #C1A17F;
-    color: #333;
+    color: #805C3E;
     align-items: center;
     text-align: center;
     overflow: hidden;
@@ -493,7 +493,7 @@ iframe {
 
 .tamu h2 {
     text-align: center;
-    color: #333333;
+    color: #805C3E;
     margin-bottom: 20px;
 }
 
@@ -720,7 +720,7 @@ legend {
     border-radius: 8px;
     font-size: 14px;
     background-color: #f5f0eb;
-    color: #333;
+    color: #805C3E;
     transition: border-color 0.3s ease;
 }
 
@@ -927,7 +927,7 @@ legend {
 
     .detail-acara {
         background: #C1A17F;
-        color: #333;
+        color: #805C3E;
         text-align: center;
     }
     
@@ -1095,7 +1095,7 @@ legend {
     .detail-acara {
         padding: 50px 5px;
         background: #C1A17F;
-        color: #333;
+        color: #805C3E;
         text-align: center;
     }
 }
